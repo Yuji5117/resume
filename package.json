@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Yuji Nakamuraの職務経歴書",
+  "scripts": {
+    "format": "prettier --write docs/index.md",
+    "lint:text": "textlint docs/index.md",
+    "fix:text": "textlint --fix docs/index.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "textlint": "^15.2.1",
+    "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-preset-japanese": "^10.0.4",
+    "textlint-rule-prh": "^6.1.0"
+  }
+}

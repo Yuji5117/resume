@@ -1,0 +1,14 @@
+version: 1
+rules:
+  - expected: GitHub
+    patterns: [Github, GITHUB]
+  - expected: JavaScript
+    patterns: [Javascript, Javascripts]
+  - expected: TypeScript
+    patterns: [Typescript]
+  - expected: Next.js
+    patterns: [Nextjs, Next JS, NextJS]
+  - expected: API
+    patterns: [Api, api]
+  - expected: UI/UX
+    patterns: [UI・UX, UIUX]
