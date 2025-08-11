@@ -13,11 +13,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
     "textlint": "^15.2.1",
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
     "textlint-rule-preset-japanese": "^10.0.4",
     "textlint-rule-prh": "^6.1.0"
+  },
+  "lint-staged": {
+    "docs/**/*.md": [
+      "prettier --write",
+      "textlint --fix",
+      "prettier --check",
+      "textlint"
+    ]
   }
 }
