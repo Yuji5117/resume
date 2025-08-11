@@ -5,12 +5,15 @@
   "scripts": {
     "format": "prettier --write docs/index.md",
     "lint:text": "textlint docs/index.md",
-    "fix:text": "textlint --fix docs/index.md"
+    "fix:text": "textlint --fix docs/index.md",
+    "check": "prettier --check docs/index.md && textlint docs/index.md",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^3.6.2",
     "textlint": "^15.2.1",
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
